@@ -40,37 +40,55 @@ module.exports = function(app) {
 
   app.get(
     "/api/build",
-    [authJwt.verifyToken, authJwt.isAdministrador],
+    authJwt.verifyToken,
     buildController.index
   );
 
   app.post(
     "/api/build/create",
-    [authJwt.verifyToken, authJwt.isAdministrador],
+    authJwt.verifyToken,
     buildController.create
   )
 
   app.get(
     "/api/level",
-    [authJwt.verifyToken, authJwt.isAdministrador],
+    authJwt.verifyToken,
     levelController.index
   );
 
   app.post(
     "/api/level/create",
-    [authJwt.verifyToken, authJwt.isAdministrador],
+    authJwt.verifyToken,
     levelController.create
   )
 
   app.get(
     "/api/apartment",
-    [authJwt.verifyToken, authJwt.isAdministrador],
+    authJwt.verifyToken,
     apartmentController.index
   );
 
   app.post(
     "/api/apartment/create",
-    [authJwt.verifyToken, authJwt.isAdministrador],
+    authJwt.verifyToken,
     apartmentController.create
+  )
+
+  app.post(
+    "/api/apartment/gestion",
+    authJwt.verifyToken,
+    apartmentController.gestion
+  )
+
+  app.post(
+    "/api/apartment/delete",
+    authJwt.verifyToken,
+    apartmentController.delete
+  )
+
+  app.get(
+    "/api/apartment/count",
+    authJwt.verifyToken,
+    apartmentController.count
   )
 };
