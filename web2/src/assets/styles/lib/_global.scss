@@ -1,0 +1,192 @@
+html, body {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+html {
+  background-color: #f5f8fa;
+  overflow-y: auto !important;  
+}
+
+.logo-login img {
+  max-width: 300px;
+  min-width: 100px;
+  width: 100%;
+  display: inline;
+  margin-bottom: 1.5rem;
+}
+
+ol {
+  list-style: none !important;
+}
+
+.main-section {
+  padding-top: 2.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card, .card-header {
+  box-shadow: none;
+}
+
+.icon {
+  user-select: none;
+  cursor: inherit;  
+  align-items: center;  
+  display: inline-flex;  
+  justify-content: center;
+  height: 1.5rem;
+}
+
+.main.is-fullheight {
+  min-height: calc( 100vh - 116px);
+}
+
+.is-not-maxwidth {
+  max-width: 100% !important;
+}
+
+.button.is-primary {
+  background-color: $primary;
+}
+
+.button.is-primary.is-outlined {
+  border-color: $primary;
+  color: $primary;
+}
+
+.button.is-primary.is-outlined:hover, 
+.button.is-primary.is-outlined.is-hovered, 
+.button.is-primary.is-outlined:focus, 
+.button.is-primary.is-outlined.is-focused {
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.button.is-primary:hover, 
+.button.is-primary.is-hovered {
+  background-color: #132131;
+}
+
+.button.is-primary:focus:not(:active), 
+.button.is-primary.is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(32, 55, 82, 0.25)
+}
+
+
+/** Margin */
+
+.margin {
+  margin: $size-base;
+}
+
+.mdMargin {
+  margin: $size-base / 2;
+}
+
+.marginTop {
+  margin-top: $size-base;
+}
+
+.mdMarginTop {
+  margin-top: $size-base / 2;
+}
+
+.marginBottom {
+  margin-bottom: $size-base;
+}
+
+.mdMarginBottom {
+  margin-bottom: $size-base / 2;
+}
+
+.marginLeft {
+  margin-left: $size-base;
+}
+
+.mdMarginLeft {
+  margin-left: $size-base / 2;
+}
+
+.marginRight {
+  margin-right: $size-base;
+}
+
+.mdMarginRight {
+  margin-right: $size-base / 2;
+}
+
+.is-marginless-bottom {
+  margin-bottom: 0 !important;
+}
+
+.is-marginless-left {
+  margin-left: 0 !important;
+}
+
+/** Padding */
+
+.padding {
+  padding: $size-base;
+}
+
+.mdPadding {
+  padding: $size-base / 2;
+}
+
+.paddingTop {
+  padding-top: $size-base;
+}
+
+.mdPaddingTop {
+  padding-top: $size-base / 2;
+}
+
+.paddingBottom {
+  padding-bottom: $size-base;
+}
+
+.mdPaddingBottom {
+  padding-bottom: $size-base / 2;
+}
+
+.paddingLeft {
+  padding-left: $size-base;
+}
+
+.mdPaddingLeft {
+  padding-left: $size-base / 2;
+}
+
+.paddingRight {
+  padding-right: $size-base;
+}
+
+.mdPaddingRight {
+  padding-right: $size-base / 2;
+}
+
+.is-paddingless-top {
+  padding-top: 0 !important;
+}
+
+.is-paddingless-left {
+  padding-left: 0 !important;
+}
+
+.is-paddingless-right {
+  padding-right: 0 !important;
+}
+
+.items-list .item {
+  border-bottom: 1px solid #f5f8fa;
+  
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}

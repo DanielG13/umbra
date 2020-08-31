@@ -1,0 +1,15 @@
+.footer {
+  padding: $footer-padding;
+  background-color: $footer-background-color;
+
+  .logo {
+    img {
+      width: auto;
+      height: $footer-logo-height;
+    }
+  }
+
+  .active-year {
+    margin-left: 5px;
+  }
+}
